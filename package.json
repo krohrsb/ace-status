@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "memoizee": "^0.4.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.1.1"
+  }
 }
