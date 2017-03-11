@@ -42,7 +42,7 @@ class ACE {
                         onSchedule: train.onSchedule,
                         scheduledTime: stop.schedule,
                         train: train.scheduleNumber,
-                        status: `[${train.scheduleNumber} to ${stopName}. ETA: ${(stop.status === 'On Time' ? stop.schedule : stop.status)}]`
+                        status: `[${train.scheduleNumber} to ${stopName}. ETA: ${(stop.status === 'On Time' ? stop.schedule : stop.status)}. Late: ${train.onSchedule} mins.]`
                     };
                     
                 } else {
