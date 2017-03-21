@@ -17,12 +17,22 @@ class Train {
         this.stops = options.stops;
         this.nextStopID = options.nextStopID;
         this.minutesToNextStops = options.minutesToNextStops;
+        this.destinationName = options.destinationName;
 
     }
     _getStopById(id) {
         return this.stops.find((stop) => stop.id === id);
     }
+    _getStopByName(name) {
+        if (!name) {
+            throw new Error('Name not provided');
+        }
+        return this.stops.find((stop) => stop.name.toLowerCase() === name.toLowerCase());
+    }
     _getMinutesToNextStopById(id) {
+        if (!id) {
+            throw new Error('ID required');
+        }
         return this.minutesToNextStops.find((stop) => stop.stopID.toString() === id.toString());
     }
     get time() {
@@ -33,8 +43,17 @@ class Train {
         let time = this._getMinutesToNextStopById(this.nextStopID);
         return `Next stop: ${next ? next.name : 'unknown'}. ETA: ${time ? time.status : 'unknown'}`;
     }
+    get destination() {
+        if (this.destinationName) {
+            let destination = this._getStopByName(this.destinationName);
+            let time = this._getMinutesToNextStopById(destination.id);
+            return `Dest: ${destination ? destination.name : 'unknown'}. ETA: ${time ? time.status : 'unknown'}`;
+        } else {
+            return '';
+        }  
+    }
     get status() {
-        return `Train ${this.scheduleNumber} is ${this.time}. ${this.nextStop}.`;
+        return `Train ${this.scheduleNumber} is ${this.time}. ${this.nextStop}. ${this.destination}`;
     }
     
 }
@@ -68,6 +87,7 @@ class ACE {
     constructor(options) {
         this.ifttKey = options.ifttKey,
         this.ifttEvent = options.ifttEvent;
+        this.destinationName = options.destinationName;
         this._serviceCache = memoizee(this._getService, {
             promise: true,
             maxAge: 3000
@@ -124,6 +144,7 @@ class ACE {
                 }
                 return trains.map((train) => {
                     train.stops = stops;
+                    train.destinationName = this.destinationName;
                     return new Train(train);
                 });
             });
@@ -168,19 +189,22 @@ class ACE {
 let ace = new ACE({
     ifttKey: process.env.IFTT_KEY,
     ifttEvent: process.env.IFTT_EVENT,
+    destinationName: process.env.DEST_NAME,
     seed: {
         get_vehicles: require('./seed_data/vehicles.json'),
         get_stops: require('./seed_data/stops.json')
     },
-    useSeed: false
+    useSeed: true
 });
 if (ACTION === 'status') {
     ace.getStatus().then((data) => {
-        if (data && data.length) {
-            console.log(data.join('\n'));
+        if (data) {
+            console.log(data);
         } else {
             console.log('No trains running');
         }
+    }).catch((err) => {
+        console.error(err.toString());
     });
 } else {
     ace.sendStatus()
