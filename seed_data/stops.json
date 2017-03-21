@@ -1,0 +1,92 @@
+[
+    {
+        "rid": 5,
+        "id": 150,
+        "name": "Stockton ACE",
+        "lat": 37.95646667480469,
+        "lng": -121.27851104736328,
+        "extID": "",
+        "shortName": "SKT"
+    },
+    {
+        "rid": 5,
+        "id": 151,
+        "name": "Lathrop",
+        "lat": 37.79878616333008,
+        "lng": -121.26315307617188,
+        "extID": "",
+        "shortName": "LAT"
+    },
+    {
+        "rid": 5,
+        "id": 152,
+        "name": "Tracy",
+        "lat": 37.696205139160156,
+        "lng": -121.43324279785156,
+        "extID": "",
+        "shortName": "TRC"
+    },
+    {
+        "rid": 5,
+        "id": 153,
+        "name": "Vasco",
+        "lat": 37.69702911376953,
+        "lng": -121.717529296875,
+        "extID": "",
+        "shortName": "VAR"
+    },
+    {
+        "rid": 5,
+        "id": 154,
+        "name": "Livermore",
+        "lat": 37.684226989746094,
+        "lng": -121.76970672607422,
+        "extID": "",
+        "shortName": "LVA"
+    },
+    {
+        "rid": 5,
+        "id": 155,
+        "name": "Pleasanton",
+        "lat": 37.658329010009766,
+        "lng": -121.88233947753906,
+        "extID": "",
+        "shortName": "PLD"
+    },
+    {
+        "rid": 5,
+        "id": 156,
+        "name": "Fremont",
+        "lat": 37.55905532836914,
+        "lng": -122.0071792602539,
+        "extID": "",
+        "shortName": "FMT"
+    },
+    {
+        "rid": 5,
+        "id": 157,
+        "name": "Great America",
+        "lat": 37.40692901611328,
+        "lng": -121.96701049804688,
+        "extID": "",
+        "shortName": "GAC"
+    },
+    {
+        "rid": 5,
+        "id": 158,
+        "name": "Santa Clara",
+        "lat": 37.35326385498047,
+        "lng": -121.93617248535156,
+        "extID": "",
+        "shortName": "SCC"
+    },
+    {
+        "rid": 5,
+        "id": 159,
+        "name": "San Jose",
+        "lat": 37.32977294921875,
+        "lng": -121.90283203125,
+        "extID": "",
+        "shortName": "SJC"
+    }
+]

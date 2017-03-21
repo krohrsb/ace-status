@@ -1,0 +1,416 @@
+[
+    {
+        "equipmentID": "3101",
+        "tripID": null,
+        "lat": 37.97936,
+        "lng": -121.2842,
+        "load": 0,
+        "capacity": null,
+        "routeID": 5,
+        "patternID": 2,
+        "nextStopID": 0,
+        "nextStopETA": -1,
+        "nextPatternStopID": 0,
+        "scheduleNumber": "NIS",
+        "inService": 0,
+        "minutesToNextStops": [],
+        "onSchedule": null,
+        "vehicleType": "Train",
+        "trainID": 0,
+        "receiveTime": 1490013214000,
+        "schedules": {
+            "aID": "2094717663",
+            "number": "NIS",
+            "svcID": 5,
+            "dir": 0,
+            "stops": []
+        },
+        "deadHead": "0"
+    },
+    {
+        "equipmentID": "3102",
+        "tripID": null,
+        "lat": 37.58978,
+        "lng": -121.9551,
+        "load": 0,
+        "capacity": null,
+        "routeID": 5,
+        "patternID": 1,
+        "nextStopID": 156,
+        "nextStopETA": 521,
+        "nextPatternStopID": 14,
+        "scheduleNumber": "07",
+        "inService": 1,
+        "minutesToNextStops": [
+            {
+                "stopID": "156",
+                "patternStopID": "14",
+                "minutes": 6,
+                "time": "08:41AM",
+                "schedule": "08:40AM",
+                "status": "08:41AM",
+                "statuscolor": "#39b139",
+                "track": "3",
+                "direction": "Westbound",
+                "directionAbbr": "W.",
+                "equipmentID": "3102",
+                "routeID": 5
+            },
+            {
+                "stopID": "157",
+                "patternStopID": "13",
+                "minutes": 24,
+                "time": "08:59AM",
+                "schedule": "08:58AM",
+                "status": "08:59AM",
+                "statuscolor": "#39b139",
+                "track": "3",
+                "direction": "Westbound",
+                "directionAbbr": "W.",
+                "equipmentID": "3102",
+                "routeID": 5
+            },
+            {
+                "stopID": "158",
+                "patternStopID": "12",
+                "minutes": 31,
+                "time": "09:06AM",
+                "schedule": "09:05AM",
+                "status": "09:06AM",
+                "statuscolor": "#39b139",
+                "track": "3",
+                "direction": "Westbound",
+                "directionAbbr": "W.",
+                "equipmentID": "3102",
+                "routeID": 5
+            },
+            {
+                "stopID": "159",
+                "patternStopID": "11",
+                "minutes": 43,
+                "time": "09:18AM",
+                "schedule": "09:17AM",
+                "status": "09:18AM",
+                "statuscolor": "#39b139",
+                "track": "3",
+                "direction": "Westbound",
+                "directionAbbr": "W.",
+                "equipmentID": "3102",
+                "routeID": 5
+            }
+        ],
+        "onSchedule": -1,
+        "vehicleType": "Train",
+        "trainID": 225,
+        "receiveTime": 1490024120000,
+        "schedules": {
+            "aID": "2094716817",
+            "number": "07",
+            "svcID": 5,
+            "dir": 1,
+            "stops": [
+                {
+                    "id": "150",
+                    "type": "2",
+                    "time": "425",
+                    "platform": "3",
+                    "psid": "20"
+                },
+                {
+                    "id": "151",
+                    "type": "1",
+                    "time": "444",
+                    "platform": "3",
+                    "psid": "19"
+                },
+                {
+                    "id": "152",
+                    "type": "1",
+                    "time": "456",
+                    "platform": "3",
+                    "psid": "18"
+                },
+                {
+                    "id": "153",
+                    "type": "1",
+                    "time": "485",
+                    "platform": "3",
+                    "psid": "17"
+                },
+                {
+                    "id": "154",
+                    "type": "1",
+                    "time": "490",
+                    "platform": "3",
+                    "psid": "16"
+                },
+                {
+                    "id": "155",
+                    "type": "1",
+                    "time": "498",
+                    "platform": "3",
+                    "psid": "15"
+                },
+                {
+                    "id": "156",
+                    "type": "1",
+                    "time": "520",
+                    "platform": "3",
+                    "psid": "14"
+                },
+                {
+                    "id": "157",
+                    "type": "1",
+                    "time": "538",
+                    "platform": "3",
+                    "psid": "13"
+                },
+                {
+                    "id": "158",
+                    "type": "1",
+                    "time": "545",
+                    "platform": "3",
+                    "psid": "12"
+                },
+                {
+                    "id": "159",
+                    "type": "3",
+                    "time": "557",
+                    "platform": "3",
+                    "psid": "11"
+                }
+            ]
+        },
+        "deadHead": "0",
+        "direction": "Westbound",
+        "directionAbbr": "W."
+    },
+    {
+        "equipmentID": "3103",
+        "tripID": null,
+        "lat": 37.4112,
+        "lng": -121.9699,
+        "load": 0,
+        "capacity": null,
+        "routeID": 5,
+        "patternID": 1,
+        "nextStopID": 157,
+        "nextStopETA": 515,
+        "nextPatternStopID": 8,
+        "scheduleNumber": "05",
+        "inService": 1,
+        "minutesToNextStops": [
+            {
+                "stopID": "157",
+                "patternStopID": "8",
+                "minutes": 0,
+                "time": "08:35AM",
+                "schedule": "08:33AM",
+                "status": "08:35AM",
+                "statuscolor": "#39b139",
+                "track": "3",
+                "direction": "Westbound",
+                "directionAbbr": "W.",
+                "equipmentID": "3103",
+                "routeID": 5
+            },
+            {
+                "stopID": "158",
+                "patternStopID": "9",
+                "minutes": 7,
+                "time": "08:42AM",
+                "schedule": "08:40AM",
+                "status": "08:42AM",
+                "statuscolor": "#39b139",
+                "track": "3",
+                "direction": "Westbound",
+                "directionAbbr": "W.",
+                "equipmentID": "3103",
+                "routeID": 5
+            },
+            {
+                "stopID": "159",
+                "patternStopID": "10",
+                "minutes": 19,
+                "time": "08:54AM",
+                "schedule": "08:52AM",
+                "status": "08:54AM",
+                "statuscolor": "#39b139",
+                "track": "3",
+                "direction": "Westbound",
+                "directionAbbr": "W.",
+                "equipmentID": "3103",
+                "routeID": 5
+            }
+        ],
+        "onSchedule": -2,
+        "vehicleType": "Train",
+        "trainID": 221,
+        "receiveTime": 1490024095000,
+        "schedules": {
+            "aID": "2094717098",
+            "number": "05",
+            "svcID": 5,
+            "dir": 1,
+            "stops": [
+                {
+                    "id": "150",
+                    "type": "2",
+                    "time": "400",
+                    "platform": "3",
+                    "psid": "1"
+                },
+                {
+                    "id": "151",
+                    "type": "1",
+                    "time": "419",
+                    "platform": "3",
+                    "psid": "2"
+                },
+                {
+                    "id": "152",
+                    "type": "1",
+                    "time": "431",
+                    "platform": "3",
+                    "psid": "3"
+                },
+                {
+                    "id": "153",
+                    "type": "1",
+                    "time": "460",
+                    "platform": "3",
+                    "psid": "4"
+                },
+                {
+                    "id": "154",
+                    "type": "1",
+                    "time": "465",
+                    "platform": "3",
+                    "psid": "5"
+                },
+                {
+                    "id": "155",
+                    "type": "1",
+                    "time": "473",
+                    "platform": "3",
+                    "psid": "6"
+                },
+                {
+                    "id": "156",
+                    "type": "1",
+                    "time": "495",
+                    "platform": "3",
+                    "psid": "7"
+                },
+                {
+                    "id": "157",
+                    "type": "1",
+                    "time": "513",
+                    "platform": "3",
+                    "psid": "8"
+                },
+                {
+                    "id": "158",
+                    "type": "1",
+                    "time": "520",
+                    "platform": "3",
+                    "psid": "9"
+                },
+                {
+                    "id": "159",
+                    "type": "3",
+                    "time": "532",
+                    "platform": "3",
+                    "psid": "10"
+                }
+            ]
+        },
+        "deadHead": "0",
+        "direction": "Westbound",
+        "directionAbbr": "W."
+    },
+    {
+        "equipmentID": "3104",
+        "tripID": null,
+        "lat": 37.30536,
+        "lng": -121.879,
+        "load": 0,
+        "capacity": null,
+        "routeID": 5,
+        "patternID": 1,
+        "nextStopID": 0,
+        "nextStopETA": -1,
+        "nextPatternStopID": 0,
+        "scheduleNumber": "NIS",
+        "inService": 0,
+        "minutesToNextStops": [],
+        "onSchedule": null,
+        "vehicleType": "Train",
+        "trainID": 0,
+        "receiveTime": 1490024122000,
+        "schedules": {
+            "aID": "2094717600",
+            "number": "NIS",
+            "svcID": 5,
+            "dir": 2,
+            "stops": []
+        },
+        "deadHead": "0"
+    },
+    {
+        "equipmentID": "3105",
+        "tripID": null,
+        "lat": 26.41766,
+        "lng": -80.09531,
+        "load": 0,
+        "capacity": null,
+        "routeID": 5,
+        "patternID": 1,
+        "nextStopID": 0,
+        "nextStopETA": -1,
+        "nextPatternStopID": 0,
+        "scheduleNumber": "NIS",
+        "inService": 0,
+        "minutesToNextStops": [],
+        "onSchedule": null,
+        "vehicleType": "Train",
+        "trainID": 0,
+        "receiveTime": 1483541245000,
+        "schedules": {
+            "aID": "2094717161",
+            "number": "NIS",
+            "svcID": 5,
+            "dir": 0,
+            "stops": []
+        },
+        "deadHead": "0"
+    },
+    {
+        "equipmentID": "3106",
+        "tripID": null,
+        "lat": 37.3054,
+        "lng": -121.879,
+        "load": 0,
+        "capacity": null,
+        "routeID": 5,
+        "patternID": 1,
+        "nextStopID": 0,
+        "nextStopETA": -1,
+        "nextPatternStopID": 0,
+        "scheduleNumber": "NIS",
+        "inService": 0,
+        "minutesToNextStops": [],
+        "onSchedule": null,
+        "vehicleType": "Train",
+        "trainID": 0,
+        "receiveTime": 1490024117000,
+        "schedules": {
+            "aID": "2094716798",
+            "number": "NIS",
+            "svcID": 5,
+            "dir": 2,
+            "stops": []
+        },
+        "deadHead": "0"
+    }
+]
