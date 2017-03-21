@@ -194,7 +194,7 @@ let ace = new ACE({
         get_vehicles: require('./seed_data/vehicles.json'),
         get_stops: require('./seed_data/stops.json')
     },
-    useSeed: true
+    useSeed: false
 });
 if (ACTION === 'status') {
     ace.getStatus().then((data) => {
