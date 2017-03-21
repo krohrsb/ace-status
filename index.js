@@ -41,13 +41,13 @@ class Train {
     get nextStop() {
         let next = this._getStopById(this.nextStopID);
         let time = this._getMinutesToNextStopById(this.nextStopID);
-        return `Next stop: ${next ? next.name : 'unknown'}. ETA: ${time ? time.status : 'unknown'}`;
+        return `Next stop: ${next ? next.name : 'unknown'}. ETA: ${time ? time.time : 'unknown'}`;
     }
     get destination() {
         if (this.destinationName) {
             let destination = this._getStopByName(this.destinationName);
             let time = this._getMinutesToNextStopById(destination.id);
-            return `Dest: ${destination ? destination.name : 'unknown'}. ETA: ${time ? time.status : 'unknown'}`;
+            return `Dest: ${destination ? destination.name : 'unknown'}. ETA: ${time ? time.time : 'unknown'}`;
         } else {
             return '';
         }  
