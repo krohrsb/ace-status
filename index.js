@@ -160,7 +160,6 @@ class ACE {
         if (!this.ifttEvent && !this.ifttKey) {
             throw new Error('IFTT Event & Key not provided');
         }
-        console.log(data);
         return request({
             uri: `https://maker.ifttt.com/trigger/${this.ifttEvent}/with/key/${this.ifttKey}`,
             method: 'POST',
@@ -172,13 +171,13 @@ class ACE {
     }
     getStatus() {
         return this.getTrains(true).then((trains) => {
-            return trains.map((train) => train.status).join('\n');
+            return trains.map((train) => train.status);
         });
     }
     sendStatus() {
         return this.getStatus().then((data) => {
             if (data && data.length) {
-                return this._postIFTT(data);
+                return this._postIFTT('<br />' + data.join('<br />'));
             } else {
                 return Promise.resolve(false);
             }
